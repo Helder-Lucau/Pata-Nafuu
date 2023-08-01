@@ -1,9 +1,11 @@
 import React, { useState,useEffect } from "react";
 import EachHospitalCard from "./EachHospitalCard";
+import RegionCard from "./RegionCard";
 
 function HospitalCards(){
   
      const [hospitalsData, setHospitalsData]= useState([])
+     const [selectRegion, setSelectRegion]=useState(null)
     useEffect(()=>{
         fetch("https://hospital-server-ovpz.onrender.com/hospitalsData")
         .then((response) => response.json())
@@ -14,29 +16,46 @@ function HospitalCards(){
         })
         
 },[])
-    return(
-        
-        <div >
-            <ul>
-          { hospitalsData.map((hospitalData)=>(
-           <li key={hospitalData.id}><EachHospitalCard
-              name={hospitalData.name}
-              region={hospitalData.region}
-              department={hospitalData.department}
-              description={hospitalData.description}
-              image={hospitalData.image}
-              county={hospitalData.county}
-              type={hospitalData.type}
-              phoneno={hospitalData.phoneno}
-              email={hospitalData.emailaddress}
 
-           />
-           </li>
-          ))}
-           </ul>
+ const handleCardClick=(region)=>{
+ setSelectRegion(region)
+ }
+
+ const groupHospitalsByRegion = (data) => {
+    const groupedHospitals = {};
+    data.forEach((hospital) => {
+      if (!groupedHospitals[hospital.region]) {
+        groupedHospitals[hospital.region] = [];
+      }
+      groupedHospitals[hospital.region].push(hospital);
+    });
+    return groupedHospitals;
+  };
+  const groupedHospitals = groupHospitalsByRegion(hospitalsData);
+
+ 
+
+    return(
+        <div>
+            <div>
+                {/* rendering individual cards for each region */}
+                {Object.keys(groupedHospitals).map((region)=>(
+                    <RegionCard
+                    key={region}
+                    region={region}
+                    handleCardClick={handleCardClick}
+                    hospitalsData={hospitalsData}
+                    selectRegion={selectRegion}
+                    // hospitalData={hospitalData}
+                    hospitals={groupedHospitals[region]}
+                    />
+                ))}
+
+
+            </div>
+            
         </div>
     )
-    
 }
 
 export default HospitalCards;
