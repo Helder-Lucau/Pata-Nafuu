@@ -19,7 +19,7 @@ function ContactUs(){
 
     return(
         <div className="row justify-content-center">
-            <div class="w-75 p-3 ">
+            <div class="w-50 p-3 ">
                 <h3>Share Your Thoughts and Inquiries. We're Here to Listen and Help</h3>
                 <form className="row g-3">
                         <div className="col-md-6 ">
