@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer(){
     return(
-        <div className="shadow-lg p-3 mb-5 bg-body-tertiary rounded-top">
+        <div className="bottom-colour shadow-lg p-3 mb-5  rounded-top">
             <div className="d-flex justify-content-around">
                 <div>
                     <h3>Newsletter</h3>
