@@ -3,29 +3,32 @@ import EachHospitalCard from "./EachHospitalCard";
 
 function HospitalCards(){
   
-     const [hospitals, setHospitals]= useState([])
+     const [hospitalsData, setHospitalsData]= useState([])
     useEffect(()=>{
         fetch("https://hospital-server-ovpz.onrender.com/hospitalsData")
         .then((response) => response.json())
         .then((data)=>{
-            setHospitals(data);
+            console.log( data); 
+            setHospitalsData(data);
+            console.log ("data fetched")
         })
+        
 },[])
     return(
         
         <div >
             <ul>
-          { hospitals.map((hospitaldata)=>(
-           <li key={hospitaldata.id}><EachHospitalCard
-              name={hospitaldata.name}
-              region={hospitaldata.region}
-              department={hospitaldata.department}
-              description={hospitaldata.description}
-              image={hospitaldata.image}
-              county={hospitaldata.county}
-              type={hospitaldata.type}
-              phoneno={hospitaldata.phoneno}
-              email={hospitaldata.emailaddress}
+          { hospitalsData.map((hospitalData)=>(
+           <li key={hospitalData.id}><EachHospitalCard
+              name={hospitalData.name}
+              region={hospitalData.region}
+              department={hospitalData.department}
+              description={hospitalData.description}
+              image={hospitalData.image}
+              county={hospitalData.county}
+              type={hospitalData.type}
+              phoneno={hospitalData.phoneno}
+              email={hospitalData.emailaddress}
 
            />
            </li>

@@ -1,30 +1,19 @@
 import React from "react";
 
 
-function EachHospitalCard({name,
-     region, 
-     department, 
-     description,
-     image, 
-     county,
-     type,
-    phoneno,
-    email,
+function EachHospitalCard({
+    regionName,
+    handleClick
+    
     }){
+        
+        return(
 
-
-        <div>
-        Name : {name}
-        Region : {region}
-        Department : {department}
-        Description : {description}
-         Image:{image}
-         County: {county}
-         Type : {type}
-         Phone Number : {phoneno}
-         Email Address : {email}
+        <div onClick={()=>handleClick(regionName)}>
+        REGION:{regionName}
 
         </div>
+        )
 
 }
 export default EachHospitalCard
