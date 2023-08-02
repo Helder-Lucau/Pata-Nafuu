@@ -18,7 +18,7 @@ function EachHospitalCard({name,
         
         
         return(
-    <div className="card text-bg-dark" >
+    <div className="card " >
         <div className="card " style={{width:"700px" , height:"500px"}} >
         <img src={image}  className="card-img"  alt={name} style={{height: "600px"}} />
 

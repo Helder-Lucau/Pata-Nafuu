@@ -1,11 +1,12 @@
 import React, { useState,useEffect } from "react";
-import EachHospitalCard from "./EachHospitalCard";
+// import EachHospitalCard from "./EachHospitalCard";
 import RegionCard from "./RegionCard";
 
 function HospitalCards(){
   
      const [hospitalsData, setHospitalsData]= useState([])
      const [selectRegion, setSelectRegion]=useState(null)
+
     useEffect(()=>{
         fetch("https://hospital-server-ovpz.onrender.com/hospitalsData")
         .then((response) => response.json())
@@ -36,10 +37,21 @@ function HospitalCards(){
  
 
     return(
-        <div>
-            <div>
-            <div>
+        <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          // justifyContent: "space-between", 
+          gap: "10px", 
+          color: "purple"
+         
+         
+        }}
+        >
+            
+            
                 {/* rendering individual cards for each region */}
+                
                 {Object.keys(groupedHospitals).map((region)=>(
                     <RegionCard
                     key={region}
@@ -51,11 +63,13 @@ function HospitalCards(){
                     hospitals={groupedHospitals[region]}
                     />
                 ))}
+                </div>
+                
 
 
-            </div>
-            </div>
-        </div>
+            
+            
+        
     )
 }
 
