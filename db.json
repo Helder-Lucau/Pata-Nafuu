@@ -2,7 +2,7 @@
   "booking": [
     {
       "id": 1,
-      "name": "",
+      "pname": "",
       "pnumber": "",
       "gender": "",
       "hospital": "",
@@ -27,11 +27,11 @@
         "id": 1,
         "fname": "",
         "pnumber": "",
+        "email": "",
         "gender": "",
-        "address": "",
-        "date": "",
-        "speciality": "",
-        "issue": ""
+        "dob": "",
+        "password": "",
+        "redopass": ""
       }
     ]
 }
