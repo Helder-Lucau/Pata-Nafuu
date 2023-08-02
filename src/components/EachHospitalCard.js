@@ -15,19 +15,25 @@ function EachHospitalCard({name,
     
     }){
         
+        
+        
         return(
+    <div className="card text-bg-dark" >
+        <div className="card " style={{width:"700px" , height:"500px"}} >
+        <img src={image}  className="card-img"  alt={name} style={{height: "600px"}} />
 
-        <div >
-        <p>Name : {name}</p>
-        <p>Region : {region} </p>
-        <p>Department : {department} </p>
-        <p> Description : {description} </p>
-        <img src={image}  alt={name}/>
-        <p>County: {county} </p>
-        <p>Type : {type} </p>
-        <p>Phone Number : {phoneno} </p>
-        <p>Email Address : {email} </p>
-
+        <div className="card-img-overlay">
+        <h3 className="card-title">Name : {name}</h3>
+        <p className="card-text">Region : {region} </p>
+        <p className="card-text">Department : {department} </p>
+        <p className="card-text"> Description : {description} </p>
+       
+        <p className="card-text">County: {county} </p>
+        <p className="card-text">Type : {type} </p>
+        <p className="card-text">Phone Number : {phoneno} </p>
+        <p className="card-text">Email Address : {email} </p>
+        </div>
+        </div>
         </div>
         )
 

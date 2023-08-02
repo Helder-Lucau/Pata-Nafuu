@@ -11,9 +11,6 @@ function RegionCard({
     
 }){
    
-    // const filteredHospitals = selectRegion
-    // ? hospitalsData.filter((hospitalData) => hospitalData.region === selectRegion)
-    // : hospitalsData;
 
         
         return(
@@ -21,10 +18,12 @@ function RegionCard({
         <div onClick={()=>handleCardClick(region)} style={{ cursor: "pointer" }}>
         <div>
         <h3>Hospitals in {region}</h3>
+        <div>
                {selectRegion === region && (
-                <ul>
+                <ul className="card-container" style={{display:"flex"}}> 
+                    
                     {hospitals.map((hospital)=>(
-                        <li key={hospital.name}>
+                        <li key={hospital.name} style={{margin:"80px"}}>
 
                           <EachHospitalCard
                           name={hospital.name}
@@ -43,6 +42,7 @@ function RegionCard({
 
                 </ul>
                )}
+               </div>
                 </div>
 
         </div>
