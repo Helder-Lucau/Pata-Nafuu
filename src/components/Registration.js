@@ -50,7 +50,7 @@ function BookAppointment() {
       <div className="row mt-5">
         <div className="col-lg-6 bg-white m-auto wrapper">
           <h1 className="text-center pt-3 mb-4">Register</h1>
-          <p>Please fill out the form below to make an appointment</p>
+          <p className="text-center">Please fill out the form below</p>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label>Full Name</label>
