@@ -1,12 +1,43 @@
 import React, { useState } from "react";
 
 function BookAppointment() {
+  const [name, setName] = useState("");
+  const [pnumber, setPNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [gender, setGender] = useState("");
+  const [hospital, setHospital] = useState("");
+  const [speciality, setSpeciality] = useState("");
+  const [issue, setIssue] = useState("");
+
+  function handleSubmit(e) {
+    e.prevent();
+
+    const formData = {
+      name,
+      pnumber,
+      email,
+      gender,
+      hospital,
+      speciality,
+      issue,
+    };
+
+    fetch("http://localhost:3001/bookings", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  }
+
   return (
     <div className="container">
       <div className="row mt-5">
         <div className="col-lg-6 bg-white m-auto wrapper">
           <h1 className="text-center pt-3 mb-4">Book an Appointment</h1>
-          <form>
+          <p>Please fill out the form below to make an appointment</p>
+          <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label>Full Name</label>
               <input type="text" className="form-control"></input>
@@ -28,7 +59,7 @@ function BookAppointment() {
               </select>
             </div>
             <div className="mb-3">
-              <label>Hospitals</label>
+              <label>Hospital</label>
               {/*hospital data will fetched from the api*/}
               <select className="form-select">
                 <option>Karen Hospital</option>
