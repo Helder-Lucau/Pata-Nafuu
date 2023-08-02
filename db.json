@@ -24,7 +24,14 @@
   ],
     "registration": [
       {
-
+        "id": 1,
+        "fname": "",
+        "pnumber": "",
+        "gender": "",
+        "address": "",
+        "date": "",
+        "speciality": "",
+        "issue": ""
       }
     ]
 }
