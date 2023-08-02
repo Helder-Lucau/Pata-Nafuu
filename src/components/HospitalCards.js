@@ -1,5 +1,4 @@
 import React, { useState,useEffect } from "react";
-// import EachHospitalCard from "./EachHospitalCard";
 import RegionCard from "./RegionCard";
 
 function HospitalCards(){
@@ -41,12 +40,9 @@ function HospitalCards(){
         style={{
           display: "flex",
           flexWrap: "wrap",
-          // justifyContent: "space-between", 
           gap: "10px", 
-          color: "purple"
          
-         
-        }}
+         }}
         >
             
             
@@ -59,7 +55,6 @@ function HospitalCards(){
                     handleCardClick={handleCardClick}
                     hospitalsData={hospitalsData}
                     selectRegion={selectRegion}
-                    // hospitalData={hospitalData}
                     hospitals={groupedHospitals[region]}
                     />
                 ))}
