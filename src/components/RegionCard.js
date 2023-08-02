@@ -17,7 +17,9 @@ function RegionCard({
 
         <div onClick={()=>handleCardClick(region)} style={{ cursor: "pointer" }}>
         <div>
+            <div className="card" style={{width: "400px", height:"300px"}}>
         <h3>Hospitals in {region}</h3>
+          </div>
         <div>
                {selectRegion === region && (
                 <ul className="card-container" style={{display:"flex"}}> 

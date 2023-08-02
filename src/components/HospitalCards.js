@@ -38,6 +38,7 @@ function HospitalCards(){
     return(
         <div>
             <div>
+            <div>
                 {/* rendering individual cards for each region */}
                 {Object.keys(groupedHospitals).map((region)=>(
                     <RegionCard
@@ -53,7 +54,7 @@ function HospitalCards(){
 
 
             </div>
-            
+            </div>
         </div>
     )
 }
