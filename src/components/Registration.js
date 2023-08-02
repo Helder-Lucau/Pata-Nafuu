@@ -24,7 +24,7 @@ function BookAppointment() {
     };
 
     //Using POST method to send form data to the API
-    fetch("// http://localhost:3001/registration", {
+    fetch("http://localhost:3001/registration", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -112,7 +112,7 @@ function BookAppointment() {
             <div className="mb-3">
               <label>Confirm Password</label>
               <input
-                type="redopass"
+                type="password"
                 className="form-control"
                 value={redopass}
                 onChange={(e) => setRedoPass(e.target.value)}
@@ -120,7 +120,7 @@ function BookAppointment() {
             </div>
             <div className="text-center">
               <button type="submit" className="btn btn-success btn-lg mb-3">
-               Register
+                Register
               </button>
             </div>
           </form>
