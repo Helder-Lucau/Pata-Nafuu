@@ -1,14 +1,14 @@
 {
   "booking": [
-      {
-        "id": 1,
-        "fullName": "",
-        "pnumber": "",
-        "gender": "",
-        "hospital": "",
-        "date": "",
-        "speciality": "",
-        "issue": ""
-      }
-    ]
-  }
+    {
+      "id": 1,
+      "fullName": "",
+      "pnumber": "",
+      "gender": "",
+      "hospital": "",
+      "date": "",
+      "speciality": "",
+      "issue": ""
+    }
+  ]
+}

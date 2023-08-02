@@ -6,23 +6,25 @@ function BookAppointment() {
   const [email, setEmail] = useState("");
   const [gender, setGender] = useState("");
   const [hospital, setHospital] = useState("");
+  const [date, setDate] = useState("");
   const [speciality, setSpeciality] = useState("");
   const [issue, setIssue] = useState("");
 
   function handleSubmit(e) {
-    e.prevent();
+    e.preventDefault();
 
     const formData = {
-      name,
-      pnumber,
-      email,
-      gender,
-      hospital,
-      speciality,
-      issue,
+      name: name,
+      pnumber: pnumber,
+      email: email,
+      gender: gender,
+      hospital: hospital,
+      date: date,
+      speciality: speciality,
+      issue: issue,
     };
 
-    fetch("http://localhost:3001/bookings", {
+    fetch("http://localhost:3001/booking", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -40,19 +42,38 @@ function BookAppointment() {
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label>Full Name</label>
-              <input type="text" className="form-control"></input>
+              <input
+                type="text"
+                className="form-control"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              ></input>
             </div>
             <div className="mb-3">
               <label>Phone number</label>
-              <input type="text" className="form-control"></input>
+              <input
+                type="text"
+                className="form-control"
+                value={pnumber}
+                onChange={(e) => setPNumber(e.target.value)}
+              ></input>
             </div>
             <div className="mb-3">
               <label>Email address</label>
-              <input type="email" className="form-control"></input>
+              <input
+                type="email"
+                className="form-control"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              ></input>
             </div>
             <div className="mb-3">
               <label>Gender</label>
-              <select className="form-select">
+              <select
+                className="form-select"
+                value={gender}
+                onChange={(e) => setGender(e.target.value)}
+              >
                 <option>Choose gender</option>
                 <option>Male</option>
                 <option>Female</option>
@@ -61,7 +82,11 @@ function BookAppointment() {
             <div className="mb-3">
               <label>Hospital</label>
               {/*hospital data will fetched from the api*/}
-              <select className="form-select">
+              <select
+                className="form-select"
+                value={hospital}
+                onChange={(e) => setHospital(e.target.value)}
+              >
                 <option>Karen Hospital</option>
                 <option>Aga Khan Hospital</option>
                 <option>PCE Hospital</option>
@@ -69,18 +94,32 @@ function BookAppointment() {
             </div>
             <div className="mb-3">
               <label>Preferred date of appointment</label>
-              <input type="date" className="form-control"></input>
+              <input
+                type="date"
+                className="form-control"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
+              ></input>
             </div>
             <div className="mb-3">
               <label>Speciality</label>
-              <select className="form-select">
+              <select
+                className="form-select"
+                value={speciality}
+                onChange={(e) => setSpeciality(e.target.value)}
+              >
                 <option>Infectious Diseases</option>
                 <option>Dermatology</option>
                 <option>Medical Oncology</option>
               </select>
             </div>
             <div className="form-floating mb-3">
-              <textarea className="form-control" rows="3"></textarea>
+              <textarea
+                className="form-control"
+                rows="3"
+                value={issue}
+                onChange={(e) => setIssue(e.target.value)}
+              ></textarea>
               <label>Primary medical issue </label>
             </div>
             <div className="text-center">
