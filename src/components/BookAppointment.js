@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 
 function BookAppointment() {
+
   const [name, setName] = useState("");
   const [pnumber, setPNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -10,27 +11,34 @@ function BookAppointment() {
   const [speciality, setSpeciality] = useState("");
   const [issue, setIssue] = useState("");
 
-  function handleSubmit(e) {
-    e.preventDefault();
 
-    const formData = {
-      name: name,
-      pnumber: pnumber,
-      email: email,
-      gender: gender,
-      hospital: hospital,
-      date: date,
-      speciality: speciality,
-      issue: issue,
-    };
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
+    //Putting together the current form data into an object using values stored in state
+    const formData = {name: name, pnumber:pnumber, email: email, gender: gender, hospital: hospital, date: date, speciality: speciality, issue: issue}
+
+    //Using POST method to send form data to the API
     fetch("http://localhost:3001/booking", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        console.log(data)
+        alert(`${name} thanks for using our services`)
+      });
+
+    //Setting state to an empty string to clear out the values from input fields
+    setName("");
+    setPNumber("");
+    setEmail("");
+    setGender("");
+    setHospital("");
+    setDate("");
+    setSpeciality("");
+    setIssue("");
   }
 
   return (
