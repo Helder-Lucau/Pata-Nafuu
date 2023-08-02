@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cnct_form{
+  width: 650px;
+}
+
+.cnct_btn{
+  margin: 10px;
+  width: 75%;
+}
