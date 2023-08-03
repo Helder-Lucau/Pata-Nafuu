@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css'; // Add this line to import custom CSS
+import '../style/Home.css'; // Add this line to import custom CSS
 
 function Home() {
   return (
@@ -18,7 +18,7 @@ function Home() {
           </div>
         </div>
         <div className="carousel-item">
-          <img src="https://images.pexels.com/photos/4386504/pexels-photo-4386504.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+          <img src="https://images.pexels.com/photos/4386504/pexels-photo-4386504.jpeg?auto=compress&cs=tinysrgb&w=1600"  alt='...'/>
           <div className="carousel-caption">
             <h5>Now in six Region</h5>
             <p>From Search to Service: Your Health Journey Simplified.</p>
