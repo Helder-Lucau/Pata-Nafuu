@@ -28,7 +28,7 @@ function RegionCard({ region, handleCardClick, hospitals, selectRegion }) {
     <>
       <div style={cardStyles}>
         <div onClick={() => handleCardClick(region)} className="card" style={{ width: "400px", height: "300px", backgroundColor: "#87CEEB" }}>
-          <h4 style={{ paddingTop: "130px" }}>Hospitals in {region}</h4>
+          <h4 style={{ paddingTop: "130px", paddingLeft:"60px" , fontSize:"20px"}}>Hospitals in {region}</h4>
         </div>
       </div>
 
