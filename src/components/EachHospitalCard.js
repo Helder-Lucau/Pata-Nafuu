@@ -20,34 +20,21 @@ function EachHospitalCard({name,
             fontWeight:'700'
 
 }
+
+function handleButtonClick(){
+  console.log("Button Clicked")
+}
         
         
         
         return(
-    // <div className="card " >
-    //     <div className="card " style={{width:"600px" , height:"470px"}} >
-    //     <img src={image}  className="card-img"  alt={name} style={{height: "600px"}} />
-
-    //     <div className="card-img-overlay" style={{backgroundColor:"rgba(255, 255, 255, 0.5)"}} >
-    //     <h3 className="card-title" style={textstyle}>Name :<span style={{fontSize:"20px", fontWeight:"bolder"}}> {name} </span></h3>
-    //     <p className="card-text" style={textstyle} >Region : {region} </p>
-    //     <p className="card-text" style={textstyle} >Department : {department} </p>
-    //     <p className="card-text" style={textstyle} > Description : {description} </p>
-       
-    //     <p className="card-text" style={textstyle} >County: {county} </p>
-    //     <p className="card-text" style={textstyle} >Type : {type} </p>
-    //     <p className="card-text" style={textstyle} >Phone Number : {phoneno} </p>
-    //     <p className="card-text" style={textstyle} >Email Address : {email} </p>
-    //     </div>
-    //     </div>
-    //     </div>
 
     <div className="card" style={{ display: "flex" }}>
     <div style={{ flex: 1 }}>
-      <img src={image} className="card-img" alt={name} style={{ height: "350px" , width:"400px"}} />
+      <img src={image} className="card-img" alt={name} style={{ height: "350px" , width:"400px", paddingLeft:"40px"}} />
     </div>
-    <div className="card" style={{ width: "600px", height: "470px" }}>
-      {/* <div className="card-img-overlay" style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}> */}
+    <div>
+      <div style={{ paddingLeft:"30px" }}>
         <h3 className="card-title" style={textStyle}>
           Name: <span style={{ fontSize: "20px", fontWeight: "bolder" }}>{name}</span>
         </h3>
@@ -72,7 +59,9 @@ function EachHospitalCard({name,
         <p className="card-text" style={textStyle}>
           Email Address: {email}
         </p>
-      {/* </div> */}
+        </div>
+        <button style={{marginLeft:"1000px", padding:"15px", backgroundColor: "#5C5CFF"}} onClick={handleButtonClick}> BOOK APPOINTMENT</button>
+
     </div>
   </div>
          )
