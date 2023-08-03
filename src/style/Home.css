@@ -32,13 +32,6 @@
   font-weight: 700;
   letter-spacing: 20px;
 }
-/* .carousel-caption h5 span {
-  font-family: 'Big Shoulders Display', cursive; 
-  font-size: 100px;
-  font-weight: 700;
-  letter-spacing: 20px;
-  color: green;
-} */
 .carousel-caption p{
   color: white;
   background: purple;
@@ -58,7 +51,7 @@
   bottom: 130vh;
 }
 .carousel-indicators {
-  bottom: 138vh;
+  bottom: 140vh;
 }
 .aboutus-container {
   background-color:white;
@@ -67,14 +60,18 @@
 }
 .aboutus-container h2 {
   font-family: 'Roboto Condensed', sans-serif;
-  margin-top: 50px;
+  margin-top: 60px;
   text-transform: uppercase;
   letter-spacing: 10px;
+  font-weight: bold;
 }
-.aboutus-container h2 span {
+.aboutus-container p {
   font-family: 'Roboto Condensed', sans-serif;
-  margin-top: 50px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.aboutus-container h5 {
+  margin-top: 20px;
+  font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: 10px;
-  color: purple;
 }

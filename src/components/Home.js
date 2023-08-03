@@ -20,14 +20,14 @@ function Home() {
           </div>
         </div>
         <div className="carousel-item">
-          <img src="https://images.pexels.com/photos/4386504/pexels-photo-4386504.jpeg?auto=compress&cs=tinysrgb&w=1600" className="d-block w-100 h-100" alt='...'/>
+          <img src="https://images.pexels.com/photos/4386504/pexels-photo-4386504.jpeg?auto=compress&cs=tinysrgb&w=1600" className="d-block w-100" alt='...'/>
           <div className="carousel-caption">
             <h5>Now in six Regions</h5>
             <p>From Search to Service: Your Health Journey Simplified.</p>
           </div>
         </div>
         <div className="carousel-item">
-          <img src="https://images.pexels.com/photos/7446997/pexels-photo-7446997.jpeg?auto=compress&cs=tinysrgb&w=1600" className="d-block w-100 h-100" alt="maternity" />
+          <img src="https://images.pexels.com/photos/7446997/pexels-photo-7446997.jpeg?auto=compress&cs=tinysrgb&w=1600" className="d-block w-100" alt="maternity" />
           <div className="carousel-caption">
             <h5>Where Care Meets Convenience</h5>
             <p>Bridging Distances in Healthcare: Search, Select, Schedule.</p>
@@ -43,16 +43,16 @@ function Home() {
         <span className="visually-hidden">Next</span>
       </button>
       <section className='aboutus-container'>
-      <h2><span>why</span> choose us?</h2>
+      <h2>why choose us?</h2>
       <h5>Simple easy to use Web Portal</h5>
-      <p> Pata Nafuu has invested in developing the most up to date and user friendly Web Portal, 
-      to ensure that planning and booking an appointment an easy and pleasurable experience, 
-      and ensure that you get the best value for your time.</p>
+      <p> Pata Nafuu has invested in developing the most up to date<br></br> 
+      and user friendly Web Portal, to ensure that planning and booking an appointment an easy and 
+      pleasurable experience, and ensure that you get the best value for your time.</p>
       <h5>No hidden charges</h5>
       <p>Pata Nafuu is completely transparent in it’s pricing , so, patients do not get any surprises or hidden costs while booking appointment.</p>
       </section>
-      <section>
-      <h1 className='meet-team'>MEET OUR TEAM</h1>
+      <section className='our-team'>
+      <h1 className='meet-team'>OUR TEAM</h1>
       <CardInfo />
       </section>
       <section>
