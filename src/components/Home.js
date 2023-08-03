@@ -42,7 +42,7 @@ function Home() {
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
-      <h1>MEET OUR TEAM</h1>
+      <h1 className='meet-team'>MEET OUR TEAM</h1>
       <CardInfo />
       <Footer />
     </div>

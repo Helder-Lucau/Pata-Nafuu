@@ -9,7 +9,6 @@ function Navbar() {
         <a href="#home" className="navbar-brand">
           <img src={logosimage} alt="" height="50" />
         </a>
-
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
@@ -36,7 +35,7 @@ function Navbar() {
               <a href="/signup" className="nav-link">
                 Sign Up
               </a>
-            </li> 
+            </li>
             <li className="nav-item">
               <a href="/booking" className="nav-link">
                 Book Appointment

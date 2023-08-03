@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Helder-Lucau.github.io/Pata-Nafuu/",
   "name": "pata-nafuu",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +17,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -50,5 +53,7 @@
   "bugs": {
     "url": "https://github.com/Helder-Lucau/Pata-Nafuu/issues"
   },
-  "homepage": "https://github.com/Helder-Lucau/Pata-Nafuu#readme"
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
 }
