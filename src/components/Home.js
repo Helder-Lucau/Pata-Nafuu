@@ -43,10 +43,13 @@ function Home() {
         <span className="visually-hidden">Next</span>
       </button>
       <section className='aboutus-container'>
-      <h2>why choose us?</h2>
+      <h2><span>why</span> choose us?</h2>
       <h5>Simple easy to use Web Portal</h5>
-      <p> Pata Nafuu has invested in developing the most up to date and user friendly
-      Web Portal , to ensure that planning and booking a holiday or even a business trip is a easy and pleasurable experience, and ensure that you get the best value for money. With instant access to the widest range of great value airfares from almost every major Airline operating from, to and within India, Bigbreaks.com offers the lowest fares in the simplest and quickest manner.</p>
+      <p> Pata Nafuu has invested in developing the most up to date and user friendly Web Portal, 
+      to ensure that planning and booking an appointment an easy and pleasurable experience, 
+      and ensure that you get the best value for your time.</p>
+      <h5>No hidden charges</h5>
+      <p>Pata Nafuu is completely transparent in it’s pricing , so, patients do not get any surprises or hidden costs while booking appointment.</p>
       </section>
       <section>
       <h1 className='meet-team'>MEET OUR TEAM</h1>

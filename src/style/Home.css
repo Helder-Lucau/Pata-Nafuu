@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 .carousel-item{
   height: 75vh;
@@ -59,9 +60,21 @@
 .carousel-indicators {
   bottom: 138vh;
 }
-
 .aboutus-container {
   background-color:white;
   height: 500px;
   text-align: center;
+}
+.aboutus-container h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.aboutus-container h2 span {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: purple;
 }
