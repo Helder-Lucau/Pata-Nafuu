@@ -1,6 +1,6 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; 
-import logosimage from "./images/patanafuulogo.png"
+// import "bootstrap/dist/css/bootstrap.min.css"; 
+import logosimage from "../images/patanafuulogo.png"
 
 function Navbar() {
   return (

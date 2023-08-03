@@ -1,8 +1,8 @@
 import React from "react";
-import firstimage from "./images/first.jpeg"
-import secondimage from "./images/2.jpeg"
-import thirdimage from "./images/1.jpeg"
-import fourthimage from "./images/fourth.jpeg"
+import firstimage from "../images/first.jpeg"
+import secondimage from "../images/2.jpeg"
+import thirdimage from "../images/1.jpeg"
+import fourthimage from "../images/fourth.jpeg"
 
 function CardInfo() {
   return (
