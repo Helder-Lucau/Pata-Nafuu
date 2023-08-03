@@ -4,47 +4,31 @@ import logosimage from "../images/patanafuulogo.png";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div className="container-fluid">
-        <a href="#home" className="navbar-brand">
-          <img src={logosimage} alt="" height="50" />
-        </a>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <a href="/" className="nav-link">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="/aboutus" className="nav-link">
-                About Us
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="/hospital" className="nav-link">
-                Hospitals
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="/contactus" className="nav-link">
-                Contact Us
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="/signup" className="nav-link">
-                Sign Up
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="/booking" className="nav-link">
-                Book Appointment
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <header>
+      <img className="logo" src={logosimage} alt="logo" />
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/aboutus">About us</a>
+          </li>
+          <li>
+            <a href="/hospital">Hospitals</a>
+          </li>
+          <li>
+            <a href="/booking">Book Appointment</a>
+          </li>
+          <li>
+            <a href="/contactus">Contacts</a>
+          </li>
+          <li>
+            <span className="signup"><a href="/signup">Sign Up</a></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 

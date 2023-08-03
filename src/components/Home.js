@@ -20,16 +20,16 @@ function Home() {
           </div>
         </div>
         <div className="carousel-item">
-          <img src="https://images.pexels.com/photos/4386504/pexels-photo-4386504.jpeg?auto=compress&cs=tinysrgb&w=1600"  alt='...'/>
+          <img src="https://images.pexels.com/photos/4386504/pexels-photo-4386504.jpeg?auto=compress&cs=tinysrgb&w=1600" className="d-block w-100 h-100" alt='...'/>
           <div className="carousel-caption">
             <h5>Now in six Region</h5>
             <p>From Search to Service: Your Health Journey Simplified.</p>
           </div>
         </div>
         <div className="carousel-item">
-          <img src="https://images.pexels.com/photos/7446997/pexels-photo-7446997.jpeg?auto=compress&cs=tinysrgb&w=1600" className="d-block w-100" alt="maternity" />
+          <img src="https://images.pexels.com/photos/7446997/pexels-photo-7446997.jpeg?auto=compress&cs=tinysrgb&w=1600" className="d-block w-100 h-100" alt="maternity" />
           <div className="carousel-caption">
-            <h5>Where Care Meets Convenience: Locate, Book, Recover</h5>
+            <h5>Where Care Meets Convenience: <span>Locate Book Recover</span></h5>
             <p>Bridging Distances in Healthcare: Search, Select, Schedule.</p>
           </div>
         </div>
@@ -42,9 +42,16 @@ function Home() {
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
+      <section>
+      <h2>ABOUT US</h2>
+      </section>
+      <section>
       <h1 className='meet-team'>MEET OUR TEAM</h1>
       <CardInfo />
+      </section>
+      <section>
       <Footer />
+      </section>
     </div>
   );
 }
