@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000; // Change this to your desired port number
+const port = 3000; // You can change this to your desired port number
 
 app.use(express.json());
 
