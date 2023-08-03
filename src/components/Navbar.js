@@ -1,6 +1,6 @@
 import React from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import logosimage from "../images/patanafuulogo.png";
+import {Link} from "react-router-dom"
 
 function Navbar() {
   return (
@@ -9,22 +9,22 @@ function Navbar() {
       <nav>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/aboutus">About us</a>
+            <Link to="/aboutus">About us</Link>
           </li>
           <li>
-            <a href="/hospital">Hospitals</a>
+            <Link to="/hospital">Hospitals</Link>
           </li>
           <li>
-            <a href="/booking">Book Appointment</a>
+            <Link to="/booking">Book Appointment</Link>
           </li>
           <li>
-            <a href="/contactus">Contacts</a>
+            <Link to="/contactus">Contacts</Link>
           </li>
           <li>
-            <span className="signup"><a href="/signup">Sign Up</a></span>
+            <Link to="/signup">Sign Up</Link>
           </li>
         </ul>
       </nav>
