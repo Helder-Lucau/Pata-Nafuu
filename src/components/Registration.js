@@ -24,7 +24,7 @@ function BookAppointment() {
     };
 
     //Using POST method to send form data to the API
-    fetch("http://localhost:3001/registration", {
+    fetch("https://hospital-server-ovpz.onrender.com/registration", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
