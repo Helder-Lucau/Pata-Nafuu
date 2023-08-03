@@ -1,10 +1,10 @@
 import React from "react";
-import firstImage from"./Images/gabe-pierce-htEGTleSCZk-unsplash.jpg"
-import secondImage from"./Images/pexels-total-shape-2383010.jpg"
-import thirdImage from"./Images/pexels-ketut-subiyanto-4546132.jpg"
-import whoWeAreImage from "./Images/pexels-photo-4021775.jpeg"
-import progressImage from "./Images/pexels-alex-green-5691859.jpg"
-import qualityImage from "./Images/pexels-william-fortunato-6393165.jpg"
+import firstImage from"../images/gabe-pierce-htEGTleSCZk-unsplash.jpg"
+import secondImage from"../images/pexels-total-shape-2383010.jpg"
+import thirdImage from"../images/pexels-ketut-subiyanto-4546132.jpg"
+import whoWeAreImage from "../images/pexels-photo-4021775.jpeg"
+import progressImage from "../images/pexels-alex-green-5691859.jpg"
+import qualityImage from "../images/pexels-william-fortunato-6393165.jpg"
 
 function AboutUs(){
     return(

@@ -1,20 +1,29 @@
 import React from "react";
 import "../style/App.css";
-import Home from "./Home";
-import CardInfo from "./Teamsection";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import Navbar from "./Navbar";
+import Home from "./Home";
+import ContactUs from "./ContactUs"
+import AboutUs from "./AboutUs";
+import BookingModal from "./BookingModal";
+import CardInfo from "./Teamsection";
+import Footer from "./Footer";
+
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <Navbar />
-        <Home />
-        <div className="content">
-          <h1> MEET OUR TEAM</h1>
-          <CardInfo />
-        </div>
-        </div>
+      <Navbar />
+      <Router>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/aboutus" element={<AboutUs />}/>
+        <Route path="/contactus" element={<ContactUs />}/>
+        <Route path="/booking" element={<BookingModal />}/>
+      </Routes>
+      </Router>
+      <CardInfo />
+      <Footer />
     </div>
   );
 }
