@@ -1,6 +1,6 @@
 import React from "react";
 import logosimage from "../images/patanafuulogo.png";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function Navbar() {
   return (

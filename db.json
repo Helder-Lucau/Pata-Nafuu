@@ -21,25 +21,20 @@
       "dob": "",
       "password": "",
       "redopass": ""
+    }
+  ],
+  "newsLetter": [
+    {
+      "id": 1,
+      "name": "",
+      "email": ""
     },
     {
-      "name": "",
-      "pnumber": "",
-      "email": "",
-      "gender": "",
-      "dob": "",
-      "password": "",
-      "redopass": "",
       "id": 2
     },
     {
-      "name": "helder",
-      "pnumber": "asdad",
-      "email": "adasdsa@gm.com",
-      "gender": "Male",
-      "dob": "2023-08-24",
-      "password": "adasda",
-      "redopass": "asdadsa",
+      "name": "adsa",
+      "email": "dasd@gmail.com",
       "id": 3
     }
   ]

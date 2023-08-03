@@ -51,9 +51,9 @@ function ContactUs(){
                         <p><a className="link-dark" href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-regular fa-envelope"></i> patanafuu@gmail.com</a></p>
                     </div>
                     <div className="cnct_icon">
-                        <p class="fs-3"><a className="link-dark" href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram"></i></a></p>
-                        <p class="fs-3"><a className="link-dark" href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook"></i></a></p>
-                        <p class="fs-3"><a className="link-dark" href="https://www.linkedin.com/login" target="blank"><i class="fa-brands fa-linkedin"></i></a></p>
+                        <p className="fs-3"><a className="link-dark" href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram"></i></a></p>
+                        <p className="fs-3"><a className="link-dark" href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook"></i></a></p>
+                        <p className="fs-3"><a className="link-dark" href="https://www.linkedin.com/login" target="blank"><i class="fa-brands fa-linkedin"></i></a></p>
                     </div>
                 </div>
             </div>

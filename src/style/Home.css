@@ -35,6 +35,8 @@
 .carousel-caption p{
   color: white;
   background: #7FD1B9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px solid black;
   font-family: 'Amatic SC', cursive;
   margin-top: 20px;
   font-size: 30px;
@@ -45,13 +47,13 @@
   height: 75vh;
 }
 .carousel-control-prev {
-  bottom: 130vh;
+  bottom: 190vh;
 }
 .carousel-control-next {
-  bottom: 130vh;
+  bottom: 190vh;
 }
 .carousel-indicators {
-  bottom: 140vh;
+  bottom: 190vh;
 }
 .aboutus-container {
   font-family: 'Roboto Condensed', sans-serif;
@@ -82,8 +84,34 @@
   height: 650px;
   text-align: center;
 }
-.our-team h1 {
-  letter-spacing: 10px;
+.our-team h2 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 5px;
   padding-top: 20px;
   margin-bottom: 20px;
+}
+
+/*Newsletter Form*/ 
+.newsletter {
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 400px;
+  text-align: center;
+}
+.newsletter h2 {
+  font-size: 60px;
+  margin-top: 80px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: bold;
+}
+.newsletter p {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+/*Footer */
+.footer {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color:#7FD1B9;
 }
