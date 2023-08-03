@@ -49,6 +49,7 @@ function BookAppointment() {
   };
 
   return (
+    <div>
     <div className="container">
       <div className="row mt-5">
         <div className="col-lg-6 bg-white m-auto wrapper">
@@ -147,6 +148,7 @@ function BookAppointment() {
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 }
