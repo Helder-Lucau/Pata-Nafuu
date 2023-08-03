@@ -1,32 +1,30 @@
 import React, { useState } from "react";
 
 function BookAppointment() {
-  const [pname, setPName] = useState("");
+  const [fname, setFName] = useState("");
   const [pnumber, setPNumber] = useState("");
   const [email, setEmail] = useState("");
   const [gender, setGender] = useState("");
-  const [hospital, setHospital] = useState("");
-  const [date, setDate] = useState("");
-  const [speciality, setSpeciality] = useState("");
-  const [issue, setIssue] = useState("");
+  const [dob, setDob] = useState("");
+  const [password, setPassword] = useState("");
+  const [redopass, setRedoPass] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     //Putting together the current form data into an object using values stored in state
     const formData = {
-      name: pname,
+      name: fname,
       pnumber: pnumber,
       email: email,
       gender: gender,
-      hospital: hospital,
-      date: date,
-      speciality: speciality,
-      issue: issue,
+      dob: dob,
+      password: password,
+      redopass: redopass,
     };
 
     //Using POST method to send form data to the API
-    fetch("http://localhost:3001/booking", {
+    fetch("http://localhost:3001/registration", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -38,14 +36,13 @@ function BookAppointment() {
       });
 
     //Setting state to an empty string to clear out the values from input fields
-    setPName("");
+    setFName("");
     setPNumber("");
     setEmail("");
     setGender("");
-    setHospital("");
-    setDate("");
-    setSpeciality("");
-    setIssue("");
+    setDob("");
+    setPassword("");
+    setRedoPass("");
   };
 
   return (
@@ -53,16 +50,16 @@ function BookAppointment() {
     <div className="container">
       <div className="row mt-5">
         <div className="col-lg-6 bg-white m-auto wrapper">
-          <h1 className="text-center pt-3 mb-4">Book an Appointment</h1>
-          <p>Please fill out the form below to make an appointment</p>
+          <h1 className="text-center pt-3 mb-4">Register</h1>
+          <p className="text-center">Please fill out the form below</p>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label>Full Name</label>
               <input
                 type="text"
                 className="form-control"
-                value={pname}
-                onChange={(e) => setPName(e.target.value)}
+                value={fname}
+                onChange={(e) => setFName(e.target.value)}
               ></input>
             </div>
             <div className="mb-3">
@@ -96,53 +93,35 @@ function BookAppointment() {
               </select>
             </div>
             <div className="mb-3">
-              <label>Hospital</label>
-              {/*hospital data will fetched from the api*/}
-              <select
-                className="form-select"
-                value={hospital}
-                onChange={(e) => setHospital(e.target.value)}
-              >
-              <option>--Please Select--</option>
-                <option>Karen Hospital</option>
-                <option>Aga Khan Hospital</option>
-                <option>PCE Hospital</option>
-              </select>
-            </div>
-            <div className="mb-3">
-              <label>Preferred date of appointment</label>
+              <label>Date of Birth</label>
               <input
                 type="date"
                 className="form-control"
-                value={date}
-                onChange={(e) => setDate(e.target.value)}
+                value={dob}
+                onChange={(e) => setDob(e.target.value)}
               ></input>
             </div>
             <div className="mb-3">
-              <label>Select Service</label>
-              <select
-                className="form-select"
-                value={speciality}
-                onChange={(e) => setSpeciality(e.target.value)}
-              >
-                <option>--Please Select--</option>
-                <option>Infectious Diseases</option>
-                <option>Dermatology Clinic</option>
-                <option>Medical Oncology</option>
-              </select>
+              <label>Password</label>
+              <input
+                type="password"
+                className="form-control"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              ></input>
             </div>
             <div className="mb-3">
-              <label>Primary medical issue:</label>
-              <textarea
+              <label>Confirm Password</label>
+              <input
+                type="password"
                 className="form-control"
-                rows="3"
-                value={issue}
-                onChange={(e) => setIssue(e.target.value)}
-              ></textarea>
+                value={redopass}
+                onChange={(e) => setRedoPass(e.target.value)}
+              ></input>
             </div>
             <div className="text-center">
               <button type="submit" className="btn btn-success btn-lg mb-3">
-                Book Appointment
+                Sign up
               </button>
             </div>
           </form>
