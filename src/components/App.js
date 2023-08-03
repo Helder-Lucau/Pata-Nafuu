@@ -1,15 +1,15 @@
 import '../App.css';
-import BookAppointment from './BookAppointment';
 import Footer from './Footer';
-
+import Home from './Home';
 
 function App() {
   return (
     <div className="App">
-     <BookAppointment />
+     <Home />
      <Footer />
     </div>
   );
 }
 
 export default App;
+
