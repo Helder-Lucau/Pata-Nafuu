@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 * {
     padding: 0;
@@ -5,10 +6,10 @@
     box-sizing: border-box;
 }
 body{
-    
+    background-color: bisque;
 }
 .wrapper {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px ;
