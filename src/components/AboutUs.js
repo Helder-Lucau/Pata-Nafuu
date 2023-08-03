@@ -5,6 +5,7 @@ import thirdImage from"../images/pexels-ketut-subiyanto-4546132.jpg"
 import whoWeAreImage from "../images/pexels-photo-4021775.jpeg"
 import progressImage from "../images/pexels-alex-green-5691859.jpg"
 import qualityImage from "../images/pexels-william-fortunato-6393165.jpg"
+import '../style/About.css'; 
 
 function AboutUs(){
     return(

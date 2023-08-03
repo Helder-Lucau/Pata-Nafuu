@@ -5,10 +5,9 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import ContactUs from "./ContactUs"
 import AboutUs from "./AboutUs";
+import Registration from "./Registration";
 import BookingModal from "./BookingModal";
-import CardInfo from "./Teamsection";
-import Footer from "./Footer";
-
+import HospitalCards from "./HospitalCards"
 
 function App() {
   return (
@@ -19,11 +18,11 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/aboutus" element={<AboutUs />}/>
         <Route path="/contactus" element={<ContactUs />}/>
+        <Route path="/hospital" element={<HospitalCards />}/>
+        <Route path="/signup" element={<Registration />}/>
         <Route path="/booking" element={<BookingModal />}/>
       </Routes>
       </Router>
-      <CardInfo />
-      <Footer />
     </div>
   );
 }

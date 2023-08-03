@@ -1,15 +1,15 @@
 import React from "react";
-// import "bootstrap/dist/css/bootstrap.min.css"; 
-import logosimage from "../images/patanafuulogo.png"
+// import "bootstrap/dist/css/bootstrap.min.css";
+import logosimage from "../images/patanafuulogo.png";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div className="container-fluid">
         <a href="#home" className="navbar-brand">
-          <img src= {logosimage} alt="" height="50" />
+          <img src={logosimage} alt="" height="50" />
         </a>
-        
+
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
@@ -29,12 +29,22 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a href="/contactus" className="nav-link">
-                Contact
+                Contact Us
               </a>
             </li>
-             </ul>
-            </div>
-               </div>
+            <li className="nav-item">
+              <a href="/signup" className="nav-link">
+                Sign Up
+              </a>
+            </li> 
+            <li className="nav-item">
+              <a href="/booking" className="nav-link">
+                Book Appointment
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   );
 }
