@@ -5,9 +5,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: bisque;
-}
+
 .wrapper {
     font-family: 'Roboto Condensed', sans-serif;
     padding: 30px;

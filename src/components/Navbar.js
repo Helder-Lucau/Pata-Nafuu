@@ -13,22 +13,22 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a href="#home" className="nav-link">
+              <a href="/" className="nav-link">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a href="#about" className="nav-link">
+              <a href="/aboutus" className="nav-link">
                 About Us
               </a>
             </li>
             <li className="nav-item">
-              <a href="#hospitals" className="nav-link">
+              <a href="/hospital" className="nav-link">
                 Hospitals
               </a>
             </li>
             <li className="nav-item">
-              <a href="#contact" className="nav-link">
+              <a href="/contactus" className="nav-link">
                 Contact
               </a>
             </li>
