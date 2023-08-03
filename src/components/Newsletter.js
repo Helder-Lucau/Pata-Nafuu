@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 const port = 3000; // You can change this to your desired port number
 
-app.use(express.json());
+//app.use(express.json());
 
 // Mock database to store subscribers (You can use a real database in a production environment)
-const subscribers = [];
+//const subscribers = [];
 
 // API endpoint to handle newsletter subscriptions
 app.get('/subscribe', (req, res) => {
