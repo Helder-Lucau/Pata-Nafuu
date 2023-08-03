@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Staatliches&display=swap');
+
 .carousel-item{
   height: 75vh;
   min-height: 300px;
@@ -23,21 +26,42 @@
   padding-right: 100px;
 }
 .carousel-caption h5{
+  font-family: 'Big Shoulders Display', cursive; 
   font-size: 100px;
   font-weight: 700;
+  letter-spacing: 20px;
 }
+/* .carousel-caption h5 span {
+  font-family: 'Big Shoulders Display', cursive; 
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 20px;
+  color: green;
+} */
 .carousel-caption p{
-  font-size: 25px;
+  color: white;
+  background: purple;
+  font-family: 'Amatic SC', cursive;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 10px;
 }
 .carousel-inner img {
   height: 75vh;
 }
 .carousel-control-prev {
-  bottom: 90vh;
+  bottom: 130vh;
 }
 .carousel-control-next {
-  bottom: 90vh;
+  bottom: 130vh;
 }
 .carousel-indicators {
-  bottom: 90vh;
+  bottom: 138vh;
+}
+
+.aboutus-container {
+  background-color:white;
+  height: 500px;
+  text-align: center;
 }

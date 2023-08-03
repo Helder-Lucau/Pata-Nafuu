@@ -21,7 +21,7 @@ function Footer(){
                 </div>
             </div>
             <div className="d-flex justify-content-center">
-                <p>Pata-Nafuu Copyright © 2022 All Rights Reserved</p>
+                <p>© 2023 Pata Nafuu. All Rights Reserved</p>
             </div>
         </div>
     )
