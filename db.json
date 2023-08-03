@@ -2,7 +2,7 @@
   "booking": [
     {
       "id": 1,
-      "name": "",
+      "pname": "",
       "pnumber": "",
       "gender": "",
       "hospital": "",
@@ -11,16 +11,36 @@
       "issue": ""
     }
   ],
-    "registration": [
-      {
-        "id": 1,
-        "fname": "",
-        "pnumber": "",
-        "gender": "",
-        "address": "",
-        "date": "",
-        "speciality": "",
-        "issue": ""
-      }
-    ]
+  "registration": [
+    {
+      "id": 1,
+      "fname": "",
+      "pnumber": "",
+      "gender": "",
+      "address": "",
+      "dob": "",
+      "password": "",
+      "redopass": ""
+    },
+    {
+      "name": "",
+      "pnumber": "",
+      "email": "",
+      "gender": "",
+      "dob": "",
+      "password": "",
+      "redopass": "",
+      "id": 2
+    },
+    {
+      "name": "helder",
+      "pnumber": "asdad",
+      "email": "adasdsa@gm.com",
+      "gender": "Male",
+      "dob": "2023-08-24",
+      "password": "adasda",
+      "redopass": "asdadsa",
+      "id": 3
+    }
+  ]
 }
