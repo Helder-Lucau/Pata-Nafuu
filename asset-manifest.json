@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Pata-Nafuu/static/css/main.35425c6a.css",
-    "main.js": "/Pata-Nafuu/static/js/main.1a8a4433.js",
+    "main.css": "/Pata-Nafuu/static/css/main.8c693a7a.css",
+    "main.js": "/Pata-Nafuu/static/js/main.07db8193.js",
     "static/media/pexels-william-fortunato-6393165.jpg": "/Pata-Nafuu/static/media/pexels-william-fortunato-6393165.eebcbd9209481416108c.jpg",
     "static/media/pexels-alex-green-5691859.jpg": "/Pata-Nafuu/static/media/pexels-alex-green-5691859.26b086c8cef9f7e3dcde.jpg",
     "static/media/first.jpeg": "/Pata-Nafuu/static/media/first.933a1afc782a15975733.jpeg",
@@ -11,11 +11,11 @@
     "static/media/pexels-photo-4021775.jpeg": "/Pata-Nafuu/static/media/pexels-photo-4021775.a9b5d608031dd8c76095.jpeg",
     "static/media/patanafuulogo.png": "/Pata-Nafuu/static/media/patanafuulogo.37a8e4cbafc750c4ec64.png",
     "index.html": "/Pata-Nafuu/index.html",
-    "main.35425c6a.css.map": "/Pata-Nafuu/static/css/main.35425c6a.css.map",
-    "main.1a8a4433.js.map": "/Pata-Nafuu/static/js/main.1a8a4433.js.map"
+    "main.8c693a7a.css.map": "/Pata-Nafuu/static/css/main.8c693a7a.css.map",
+    "main.07db8193.js.map": "/Pata-Nafuu/static/js/main.07db8193.js.map"
   },
   "entrypoints": [
-    "static/css/main.35425c6a.css",
-    "static/js/main.1a8a4433.js"
+    "static/css/main.8c693a7a.css",
+    "static/js/main.07db8193.js"
   ]
 }
