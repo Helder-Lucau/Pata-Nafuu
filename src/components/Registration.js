@@ -120,7 +120,7 @@ function BookAppointment() {
             </div>
             <div className="text-center">
               <button type="submit" className="btn btn-success btn-lg mb-3">
-                Register
+                Sign up
               </button>
             </div>
           </form>

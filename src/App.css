@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&family=Carrois+Gothic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 * {
     padding: 0;
@@ -9,7 +9,7 @@ body{
     background-color: bisque;
 }
 .wrapper {
-    font-family: 'Carrois Gothic SC', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px ;
