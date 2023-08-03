@@ -1,4 +1,4 @@
-# Pata Nafuu (Get Well)
+# PATA NAFUU (Get Well)
 
 Welcome to `Pata Nafuu` application whereby you can locate a hospital in your region and get to book an appointment at your figure tip. Pata Nafuu tends to bridging distances in Healthcare.
 
@@ -23,6 +23,7 @@ To run Pata Nafuu on your local machine:
 - CSS
 - JSX
 - JSON
+- Bootstrap
     
 ## License
 MIT License

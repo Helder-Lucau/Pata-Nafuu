@@ -45,14 +45,14 @@ function Home() {
       <section className='aboutus-container'>
       <h2>why choose us?</h2>
       <h5>Simple easy to use Web Portal</h5>
-      <p> Pata Nafuu has invested in developing the most up to date<br></br> 
-      and user friendly Web Portal, to ensure that planning and booking an appointment an easy and 
-      pleasurable experience, and ensure that you get the best value for your time.</p>
+      <p> Pata Nafuu has invested in developing the most up to date 
+      and user friendly Web Portal, to ensure that  searching for a hospital and booking an appointment an easy and 
+      pleasurable experience, <br></br>and ensure that you get the best value for your time.</p>
       <h5>No hidden charges</h5>
-      <p>Pata Nafuu is completely transparent in it’s pricing , so, patients do not get any surprises or hidden costs while booking appointment.</p>
+      <p>Pata Nafuu is completely transparent in it is pricing, so, patients do not get any surprises or hidden costs while booking appointment.</p>
       </section>
       <section className='our-team'>
-      <h1 className='meet-team'>OUR TEAM</h1>
+      <h1 className='section-title'>OUR TEAM</h1>
       <CardInfo />
       </section>
       <section>
