@@ -43,6 +43,26 @@ body{
     color: #7FD1B9;
  }
 
+ .btn {
+   z-index: -1;
+   background-color: #7FD1B9;
+   color: black;
+ }
+ .overlay {
+   position: fixed;
+   position: absolute;
+   align-items: center;
+   justify-content: center;
+ }
+ .modalContainer{
+   background: linear-gradient(109.6deg, rgb(9, 154, 151) 11.2%, rgb(21, 205, 168) 91.1%);
+   width: 500px;
+   
+   text-align: center;
+   border-radius: 20px;
+   padding: 100px;
+   position: relative;
+ }
 
 
 
