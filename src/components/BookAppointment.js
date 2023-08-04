@@ -1,4 +1,6 @@
+import "react-toastify/dist/ReactToastify.css";
 import React, { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 
 function BookAppointment() {
   const [pname, setPName] = useState("");
@@ -10,15 +12,19 @@ function BookAppointment() {
   const [speciality, setSpeciality] = useState("");
   const [issue, setIssue] = useState("");
 
-   //Modal box
-   const [openModal, setOpenModal] = useState(false)
-   
+  const successfulBooking = () =>
+    toast(
+      `Booking Confirmed. Name:${pname} Hospital:${hospital} Date:${date}`,
+      {
+        type: "success",
+      }
+    );
 
   const handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault(); 
 
     //Putting together the current form data into an object using values stored in state
-    const formData = {
+      const formData = {
       name: pname,
       pnumber: pnumber,
       email: email,
@@ -28,7 +34,6 @@ function BookAppointment() {
       speciality: speciality,
       issue: issue,
     };
-
     //Using POST method to send form data to the API
     fetch("https://hospital-server-ovpz.onrender.com/booking", {
       method: "POST",
@@ -38,6 +43,7 @@ function BookAppointment() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+        successfulBooking();
       });
 
     //Setting state to an empty string to clear out the values from input fields
@@ -49,17 +55,16 @@ function BookAppointment() {
     setDate("");
     setSpeciality("");
     setIssue("");
-
   };
 
   return (
-    <div>
+    <>
     <div className="container">
       <div className="row mt-5">
         <div className="col-lg-6 bg-white m-auto wrapper">
           <h1 className="text-center pt-3 mb-4">Book an Appointment</h1>
           <p>Please fill out the form below to make an appointment</p>
-          <form onSubmit={handleSubmit}>
+          <form>
             <div className="mb-3">
               <label>Full Name</label>
               <input
@@ -107,7 +112,7 @@ function BookAppointment() {
                 value={hospital}
                 onChange={(e) => setHospital(e.target.value)}
               >
-              <option>--Please Select--</option>
+                <option>--Please Select--</option>
                 <option>Agha Khan University Hospital</option>
                 <option>Coptic Hospital</option>
                 <option>Mater Hospital</option>
@@ -147,15 +152,20 @@ function BookAppointment() {
               ></textarea>
             </div>
             <div className="text-center">
-              <button type="submit" className="btn btn-success btn-lg mb-3">
+              <button
+                type="submit"
+                className="btn btn-success btn-lg mb-3"
+                onClick={handleSubmit}
+              >
                 Book Appointment
-              </button>
+              </button> 
+              <ToastContainer autoClose={false}></ToastContainer>
             </div>
           </form>
         </div>
       </div>
     </div>
-    </div>
+    </>
   );
 }
 

@@ -1,15 +1,18 @@
+import React from "react";
 
-import BookAppointment from "./BookAppointment";
+function BookingModal({ open, onClose}) {
+  if (!open) return null;
 
-export default function BookingModal({open}){
-    if(!open) return null
-    
-    return (
-        <div>
-        <div className="overlay">
+  return (
+      <div className="overlay">
         <div className="modalContainer">
+          <div className="modalRight">
+            <p onClick={onClose} className="closeBtn">X</p>
+            <p>Thank you. Booking Confirmed</p>
+          </div>
         </div>
-        </div>
-        </div>
-    )
+      </div>
+  );
 }
+
+export default BookingModal
