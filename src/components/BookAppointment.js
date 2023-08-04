@@ -104,9 +104,11 @@ function BookAppointment() {
                 onChange={(e) => setHospital(e.target.value)}
               >
               <option>--Please Select--</option>
+                <option>Agha Khan University Hospital</option>
+                <option>Coptic Hospital</option>
+                <option>Mater Hospital</option>
                 <option>Karen Hospital</option>
-                <option>Aga Khan Hospital</option>
-                <option>PCE Hospital</option>
+                <option>The Mercy Hospital</option>
               </select>
             </div>
             <div className="mb-3">
@@ -126,9 +128,9 @@ function BookAppointment() {
                 onChange={(e) => setSpeciality(e.target.value)}
               >
                 <option>--Please Select--</option>
-                <option>Infectious Diseases</option>
-                <option>Dermatology Clinic</option>
-                <option>Medical Oncology</option>
+                <option>Radiology Department</option>
+                <option>Cancer Care</option>
+                <option>Paediatric Department</option>
               </select>
             </div>
             <div className="mb-3">
