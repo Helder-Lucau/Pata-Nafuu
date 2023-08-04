@@ -44,7 +44,9 @@
   letter-spacing: 10px;
 }
 .carousel-inner img {
+  width: 100%;
   height: 75vh;
+  object-fit: cover;
 }
 .carousel-control-prev {
   bottom: 190vh;
