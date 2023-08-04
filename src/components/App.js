@@ -6,7 +6,7 @@ import Home from "./Home";
 import ContactUs from "./ContactUs"
 import AboutUs from "./AboutUs";
 import Registration from "./Registration";
-import BookingModal from "./BookingModal";
+import BookAppointment from "./BookAppointment";
 import HospitalCards from "./HospitalCards"
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Route path="/contactus" element={<ContactUs />}/>
         <Route path="/hospital" element={<HospitalCards />}/>
         <Route path="/signup" element={<Registration />}/>
-        <Route path="/booking" element={<BookingModal />}/>
+        <Route path="/booking" element={<BookAppointment />}/>
       </Routes>
       </Router>
     </div>

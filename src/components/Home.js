@@ -40,7 +40,7 @@ function Home() {
             <h5>PATA NAFUU</h5>
             <p>
               Caring at Your Fingertips: Find, Book, and Heal with Our Hospital
-              Locator.
+              Locator
             </p>
           </div>
         </div>
@@ -51,8 +51,8 @@ function Home() {
             alt="..."
           />
           <div className="carousel-caption">
-            <h5>Now in six Regions</h5>
-            <p>From Search to Service: Your Health Journey Simplified.</p>
+            <h5>Now in Three Regions</h5>
+            <p>From Search to Service: Your Health Journey Simplified</p>
           </div>
         </div>
         <div className="carousel-item">
@@ -63,7 +63,7 @@ function Home() {
           />
           <div className="carousel-caption">
             <h5>Where Care Meets Convenience</h5>
-            <p>Bridging Distances in Healthcare: Search, Select, Schedule.</p>
+            <p>Bridging Distances in Healthcare: Search, Select, Schedule</p>
           </div>
         </div>
       </div>

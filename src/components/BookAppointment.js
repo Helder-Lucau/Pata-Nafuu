@@ -10,6 +10,10 @@ function BookAppointment() {
   const [speciality, setSpeciality] = useState("");
   const [issue, setIssue] = useState("");
 
+   //Modal box
+   const [openModal, setOpenModal] = useState(false)
+   
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -34,7 +38,6 @@ function BookAppointment() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        // alert(`${name} thanks for using our services`);
       });
 
     //Setting state to an empty string to clear out the values from input fields
@@ -46,6 +49,7 @@ function BookAppointment() {
     setDate("");
     setSpeciality("");
     setIssue("");
+
   };
 
   return (
