@@ -60,9 +60,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Authors
 Pata Nafuu is a group project comprising of six members:
-* [Brian Odhiambo] (https://github.com/BMO5031)
-* [Gaitano George] (https://github.com/Gaitano123)
-* [Hellen Wamaitha] (https://github.com/Hellenwamaitha)
-* [Wambui Karanja] (https://github.com/karanja03)
-* [Collins Kipkorir] (https://github.com/kipkorir73)
-* [Helder Lucau] (https://github.com/Helder-Lucau)
+* [Brian Odhiambo](https://github.com/BMO5031)
+* [Gaitano George](https://github.com/Gaitano123)
+* [Hellen Wamaitha](https://github.com/Hellenwamaitha)
+* [Wambui Karanja](https://github.com/karanja03)
+* [Collins Kipkorir](https://github.com/kipkorir73)
+* [Helder Lucau](https://github.com/Helder-Lucau)
