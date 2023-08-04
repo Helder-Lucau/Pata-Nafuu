@@ -24,10 +24,31 @@ To run Pata Nafuu on your local machine:
 - JSX
 - JSON
 - Bootstrap
-    
+
+## Screenshoots
+
+### Landing Page
+<img src="./Screenshots/ladpage.png" alt="landingpage">
+
+### Booking Appointment 
+<img src="./Screenshots/booking.png" alt="book">
+
+### Region Cards
+<img src="./Screenshots/hospcards.png" alt="region">
+
+### Hospitals List
+<img src="./Screenshots/hospitallist.png" alt="hosplist">
+
+### Sign Up Page
+<img src="./Screenshots/signup.png" alt="signup">
+
+### Newsletter
+<img src="./Screenshots/newsletter.png" alt="newsletter">
+   
 ## License
+
 MIT License
-Copyright (c) 2023 Group Project
+Copyright (c) 2023 Pata Nafuu
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -37,5 +58,11 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## Author 
-Pata Nafuu is a group project comprising of six members.
+## Authors
+Pata Nafuu is a group project comprising of six members:
+* [Brian Odhiambo] (https://github.com/BMO5031)
+* [Gaitano George] (https://github.com/Gaitano123)
+* [Hellen Wamaitha] (https://github.com/Hellenwamaitha)
+* [Wambui Karanja] (https://github.com/karanja03)
+* [Collins Kipkorir] (https://github.com/kipkorir73)
+* [Helder Lucau] (https://github.com/Helder-Lucau)
