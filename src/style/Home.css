@@ -45,6 +45,7 @@
 }
 .carousel-inner img {
   width: 100%;
+  padding: auto;
   height: 75vh;
   object-fit: cover;
 }
