@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.carousel-item{
+  height: 75vh;
+  min-height: 300px;
+  background: no-repeat scroll center scroll;
+  -webkit-backgroung-size: cover;
+  background-size: cover;
+}
+.carousel-item::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  opacity: 0.5;
+
+}
+.carousel-caption{
+  bottom: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.carousel-caption h5{
+  font-family: 'Big Shoulders Display', cursive; 
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 20px;
+}
+.carousel-caption p{
+  color: white;
+  background: linear-gradient(109.6deg, rgb(9, 154, 151) 11.2%, rgb(21, 205, 168) 91.1%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px solid black;
+  font-family: 'Amatic SC', cursive;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 10px;
+}
+.carousel-inner img {
+  width: 100%;
+  padding: auto;
+  height: 75vh;
+  object-fit: cover;
+}
+.carousel-control-prev {
+  bottom: 190vh;
+}
+.carousel-control-next {
+  bottom: 190vh;
+}
+.carousel-indicators {
+  bottom: 190vh;
+}
+.aboutus-container {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color:white;
+  height: 400px;
+  text-align: center;
+}
+.aboutus-container h2 {
+  font-size: 60px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: bold;
+}
+.aboutus-container p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.aboutus-container h5 {
+  color: rgb(9, 154, 151);
+  margin-top: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.our-team {
+  font-family: 'Roboto Condensed', sans-serif;
+  background: linear-gradient(109.6deg, rgb(9, 154, 151) 11.2%, rgb(21, 205, 168) 91.1%);
+  height: 650px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.our-team h2 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 15px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/*Newsletter Form*/ 
+.newsletter {
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 400px;
+  text-align: center;
+}
+.newsletter h2 {
+  font-size: 60px;
+  margin-top: 80px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: bold;
+}
+.newsletter p {
+  font-size: 20px;
+}
+
+/*Footer */
+.footer {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: linear-gradient(109.6deg, rgb(9, 154, 151) 11.2%, rgb(21, 205, 168) 91.1%);
+}
